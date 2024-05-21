@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "roger_savings_backend": {
+      "main": "src/roger_savings_backend/main.mo",
+      "type": "motoko"
+    },
+    "roger_savings_frontend": {
+      "dependencies": [
+        "roger_savings_backend"
+      ],
+      "source": [
+        "src/roger_savings_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "roger_savings_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
