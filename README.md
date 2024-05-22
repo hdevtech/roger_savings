@@ -26,6 +26,10 @@ If you want to test your project locally, you can use the following commands:
 # Starts the replica, running in the background
 dfx start --background
 
+# Install all depandancies to let the project run 
+```bash
+npm run generate
+```
 # Deploys your canisters to the replica and generates your candid interface
 dfx deploy
 ```
